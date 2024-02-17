@@ -21,7 +21,7 @@ def main():
 
 
 
-@app.route("/predict",methods=['POST'])
+@app.route("/main",methods=['POST'])
 def predict():
     if request.method == 'POST':
         start = request.form['start']
