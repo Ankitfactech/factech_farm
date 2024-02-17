@@ -191,6 +191,8 @@ body{
 
 
 .popup{
+    display: none;
+    position: fixed;
     width: 400px;
     background: white;
     border-radius: 6px;
@@ -201,15 +203,15 @@ body{
     text-align: center;
     padding: 0  30px 30px;
     color: #3333;
-    visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
-.open-popup{
-    visibility: visible;
+.popup.open-popup{
+    display: block;
     top: 50%;
     transform: translate(-50%,-50%);
 
 }
+
 .popup img{
     width: 100px;
     margin-top: -50px;
