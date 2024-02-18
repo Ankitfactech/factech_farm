@@ -185,21 +185,28 @@ body {
 }
 
 .popup {
-    display: none;
-    position: fixed;
     width: 400px;
-    top: 50%;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #3333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.popup p{
+    color: Blue;
+    font-size: medium;
 }
 
-.popup.open-popup {
-    display: block;
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .popup img {
